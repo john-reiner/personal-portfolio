@@ -1,12 +1,9 @@
 import React from 'react'
 
-
-
-export default function Header(props) {
-
+export default function NoMatch() {
     return (
         <div>
-            Header
+            No Match
         </div>
     )
 }

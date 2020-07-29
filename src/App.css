@@ -1,10 +1,11 @@
-.App {
+/* .App {
   text-align: center;
   background-color: black;
   background-size: cover;
   color: white;
   min-height: 100vh;
-}
-.brand {
+} */
+#brand {
   font-family: Bangers;
+  color: cornflowerblue;
 }

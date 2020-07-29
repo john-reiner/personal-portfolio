@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import {Container, Row, Col} from 'react-bootstrap'
 //Components 
 import NavBar from './Components/NavBar';
 import Footer from './Components/Footer';
@@ -18,15 +17,11 @@ function App() {
   }, [])
 
   return (
-    <Container fluid className={'App'}>
-      <Row>
-        <Col>
-          <NavBar />
-          <MainBody data={data} />
-          <Footer />
-        </Col>
-      </Row>
-    </Container>
+    <div className={'App'}>
+      <NavBar />
+      <MainBody data={data} />
+      <Footer />
+    </div>
   );
 }
 
