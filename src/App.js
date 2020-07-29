@@ -9,6 +9,12 @@ import './App.css';
 function App() {
 
   const [data, setData] = useState({})
+  const [darkmode, setDarkMode] = useState(false)
+
+  const switchDarkmode = () => {
+    setDarkMode(!darkmode)
+    console.log(darkmode)
+  }
 
   useEffect(() => {
     fetch('/resumeData.json')
@@ -18,7 +24,7 @@ function App() {
 
   return (
     <div className={'App'}>
-      <NavBar />
+      <NavBar darkmode={darkmode} switchDarkmode={switchDarkmode}/>
       <MainBody data={data} />
       <Footer />
     </div>

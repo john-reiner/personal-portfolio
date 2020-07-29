@@ -3,10 +3,10 @@ import {Nav, Navbar, NavDropdown} from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 
 
-export default function NavBar() {
+export default function NavBar(props) {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky={'top'}>
-            <Navbar.Brand href="#home" id={"brand"}>John Reiner</Navbar.Brand>
+            <LinkContainer to='/'><Navbar.Brand href="#home" id={"brand"}>John Reiner</Navbar.Brand></LinkContainer>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
@@ -22,8 +22,8 @@ export default function NavBar() {
                 </Nav>
                 <Nav>
                 <Nav.Link href="#deets">Contact</Nav.Link>
-                <Nav.Link eventKey={2} href="#memes">
-                    Dark: On
+                <Nav.Link eventKey={2} href="#memes" onClick={props.switchDarkmode}>
+                    Dark: {props.darkmode? 'On' : 'Off'}
                 </Nav.Link>
                 </Nav>
             </Navbar.Collapse>
