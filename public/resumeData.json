@@ -1,0 +1,23 @@
+{
+    "header": {
+        "name": "John Reiner",
+        "occupation": "Full Stack Web Developer",
+        "description": "Hi, I'm John",
+        "image": "profilepic.js"
+    },
+    "footer": {
+        "test": "test"
+    },
+    "contact": {
+        "test": "test"
+    },
+    "about": {
+        "test": "test"
+    },
+    "resume": {
+        "test": "test"
+    },
+    "portfolio": {
+        "test": "test"
+    }
+}
