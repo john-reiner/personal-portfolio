@@ -5,7 +5,7 @@ import { LinkContainer } from 'react-router-bootstrap'
 
 export default function NavBar(props) {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky={'top'}>
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark"  >
             <LinkContainer to='/'><Navbar.Brand href="#home" id={"brand"}>John Reiner</Navbar.Brand></LinkContainer>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
