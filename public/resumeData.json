@@ -26,7 +26,7 @@
                 "name": "Brookdale Community College",
                 "start": "09/2012",
                 "end": "12/2015",
-                "subjects": ["Business Administration", "Economics"]
+                "subjects": ["Business Administration"]
             }
         ],
         "experience" : [
@@ -43,6 +43,56 @@
                 "start": "09/2014",
                 "end": "07/2016",
                 "skills": ["Build sustainable relationships and trust", "Constantly learned and utilized new technologies", "Developed a book of clients"]
+            }
+        ],
+        "skills": [
+            {
+                "name": "React",
+                "logo": "devicon-react-original-wordmark",
+                "info": "A JavaScript library for building user interfaces",
+                "docs": "https://reactjs.org/"
+            },
+            {
+                "name": "JavaScript",
+                "logo": "https://i7.pngguru.com/preview/106/443/731/javascript-logo-solution-stack-software-widget-python-others-thumbnail.jpg",
+                "info": "A JavaScript library for building user interfaces",
+                "docs": "https://www.javascript.com/"
+            },
+            {
+                "name": "Node.js",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
+                "info": "A JavaScript library for building user interfaces",
+                "docs": "https://reactjs.org/"
+            },
+            {
+                "name": "TypeScript",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
+                "info": "A JavaScript library for building user interfaces",
+                "docs": "https://reactjs.org/"
+            },
+            {
+                "name": "Python",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
+                "info": "A JavaScript library for building user interfaces",
+                "docs": "https://reactjs.org/"
+            },
+            {
+                "name": "PostgresSQL",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
+                "info": "A JavaScript library for building user interfaces",
+                "docs": "https://reactjs.org/"
+            },
+            {
+                "name": "Ruby",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
+                "info": "A JavaScript library for building user interfaces",
+                "docs": "https://reactjs.org/"
+            },
+            {
+                "name": "Ruby on Rails",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
+                "info": "A JavaScript library for building user interfaces",
+                "docs": "https://reactjs.org/"
             }
         ]
     },
