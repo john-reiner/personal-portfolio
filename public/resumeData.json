@@ -15,7 +15,36 @@
         "test": "test"
     },
     "resume": {
-        "test": "test"
+        "education": [
+            {
+                "name": "The Flatiron School",
+                "start": "01/2020",
+                "end": "05/2020",
+                "subjects": ["Software Engineering", "Full Stack Web Development"]
+            },
+            {
+                "name": "Brookdale Community College",
+                "start": "09/2012",
+                "end": "12/2015",
+                "subjects": ["Business Administration", "Economics"]
+            }
+        ],
+        "experience" : [
+            {
+                "name": "TD Bank",
+                "title": "Financial Service Representative",
+                "start": "07/2016",
+                "end": "11/2019",
+                "skills": ["Led the external sales teams for Monmouth County", "Consistently exceeded sales goals for the West Long Branch Team", "Presidents winner council 2017, 2018, 2019"]
+            },
+            {
+                "name": "TD Bank",
+                "title": "Customer Service Representative",
+                "start": "09/2014",
+                "end": "07/2016",
+                "skills": ["Build sustainable relationships and trust", "Constantly learned and utilized new technologies", "Developed a book of clients"]
+            }
+        ]
     },
     "portfolio": {
         "test": "test"
