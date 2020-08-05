@@ -1,8 +1,8 @@
 import React from 'react'
-import {Navbar, Nav, Button, Container, Row, Col} from 'react-bootstrap'
+import {Navbar, Nav, Button} from 'react-bootstrap'
 
 
-export default function Header() {
+export default function Header(props) {
     return (
         
         <div div style={{width: "100vw", height: "100vh", backgroundImage: "url('header_background.jpg')", backgroundRepeat: "no-repeat", backgroundSize: "cover"}} >
@@ -16,7 +16,7 @@ export default function Header() {
                 <Nav.Link href="#about">About Me</Nav.Link>
                 
                 </Nav>
-                    <Button variant="outline-info">Contact</Button>
+                    <Button style={{borderRadius: '0'}} variant="outline-primary" onClick={() => props.setShowContact(true)}>Contact</Button>
                 </Navbar.Collapse>
             </Navbar>
 

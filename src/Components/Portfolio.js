@@ -8,7 +8,7 @@ export default function Portfolio() {
                 <h2>My Favorite Projects</h2>
                     <Row>
                         <Col>
-                            <Card>
+                            <Card style={{borderRadius: '0'}}>
                                 <Card.Img variant="top" src="background.jpg" />
                                 <Card.Body>
                                 <Card.Title>Card title</Card.Title>
@@ -23,7 +23,7 @@ export default function Portfolio() {
                             </Card>
                         </Col>
                         <Col>
-                            <Card>
+                            <Card style={{borderRadius: '0'}}>
                                 <Card.Img variant="top" src="background.jpg" />
                                 <Card.Body>
                                 <Card.Title>Card title</Card.Title>
@@ -38,7 +38,7 @@ export default function Portfolio() {
                             </Card>
                         </Col>
                         <Col>
-                            <Card>
+                            <Card style={{borderRadius: '0'}}>
                                 <Card.Img variant="top" src="background.jpg" />
                                 <Card.Body>
                                 <Card.Title>Card title</Card.Title>
@@ -54,21 +54,21 @@ export default function Portfolio() {
                             </Card>
                         </Col>
                     </Row>
-                    <Button>View All My Projects</Button>
+                    <Button style={{borderRadius: '0'}} >View All My Projects</Button>
                     </Container>
                     <Container fluid style={{backgroundColor: "white", marginTop: "5%", padding: "3%"}}>
                         <Row>
                             <Col>
                                 <h2>Currently Working on...</h2>
                                 <p>Right now I'm sharpenign my Node.js skills by taking this Udemy course. Below is the project im working on this week</p>
-                                <Card className="text-center">
+                                <Card className="text-center" style={{borderRadius: '0'}}>
                                     <Card.Header>Example Working Project</Card.Header>
                                     <Card.Body>
                                         <Card.Title>Project Name</Card.Title>
                                         <Card.Text>
                                         Description of Project 
                                         </Card.Text>
-                                        <Button variant="primary">Link to Github Repo</Button>
+                                        <Button style={{borderRadius: '0'}}  variant="primary">Link to Github Repo</Button>
                                     </Card.Body>
                                     <Card.Footer className="text-muted">2 days ago</Card.Footer>
                                 </Card>
