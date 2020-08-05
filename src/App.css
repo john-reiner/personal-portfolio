@@ -1,17 +1,23 @@
-/* .App {
-  text-align: center;
-  background-color: black;
-  background-size: cover;
-  color: white;
-  min-height: 100vh;
-} */
-/* body {
-  padding-top: 30px;
-} */
+.App {
+  font-family: Roboto;
+  margin-top: 56px;
+}
 
 
 #brand {
   font-family: Bangers;
   color: cornflowerblue;
+  font-size: 7em;
+  float: right;
+  margin-top: 7%;
+  margin-right: 15%;
+}
+
+#sub-brand {
+  position: absolute;
+  bottom:100px;
+  font-size: 3em;
+  margin-left: 30%;
+
 }
 

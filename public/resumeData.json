@@ -48,51 +48,51 @@
         "skills": [
             {
                 "name": "React",
-                "logo": "devicon-react-original-wordmark",
-                "info": "A JavaScript library for building user interfaces",
-                "docs": "https://reactjs.org/"
+                "type": "language"
             },
             {
                 "name": "JavaScript",
-                "logo": "https://i7.pngguru.com/preview/106/443/731/javascript-logo-solution-stack-software-widget-python-others-thumbnail.jpg",
-                "info": "A JavaScript library for building user interfaces",
-                "docs": "https://www.javascript.com/"
+                "type": "language"
             },
             {
                 "name": "Node.js",
-                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
-                "info": "A JavaScript library for building user interfaces",
-                "docs": "https://reactjs.org/"
+                "type": "language"
             },
             {
                 "name": "TypeScript",
-                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
-                "info": "A JavaScript library for building user interfaces",
-                "docs": "https://reactjs.org/"
+                "type": "language"
             },
             {
                 "name": "Python",
-                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
-                "info": "A JavaScript library for building user interfaces",
-                "docs": "https://reactjs.org/"
+                "type": "language"
             },
             {
-                "name": "PostgresSQL",
-                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
-                "info": "A JavaScript library for building user interfaces",
-                "docs": "https://reactjs.org/"
+                "name": "PostgreSQL",
+                "type": "language"
+            },
+            {
+                "name": "Git",
+                "type": "technology"
+            },
+            {
+                "name": "GitHub",
+                "type": "technology"
+            },
+            {
+                "name": "Chrome",
+                "type": "technology"
+            },
+            {
+                "name": "Visual Studio",
+                "type": "technology"
+            },
+            {
+                "name": "Rails",
+                "type": "language"
             },
             {
                 "name": "Ruby",
-                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
-                "info": "A JavaScript library for building user interfaces",
-                "docs": "https://reactjs.org/"
-            },
-            {
-                "name": "Ruby on Rails",
-                "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
-                "info": "A JavaScript library for building user interfaces",
-                "docs": "https://reactjs.org/"
+                "type": "language"
             }
         ]
     },

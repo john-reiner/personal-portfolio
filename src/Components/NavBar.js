@@ -17,12 +17,12 @@ export default function NavBar(props) {
                     <LinkContainer to='/resume'><NavDropdown.Item href="/about">Resume</NavDropdown.Item></LinkContainer>
                     <LinkContainer to='/portfolio'><NavDropdown.Item href="#action/3.3">Portfolio</NavDropdown.Item></LinkContainer>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="https://github.com/jareiner90" target="_blank">GitHub</NavDropdown.Item>
+                    <NavDropdown.Item href="https://github.com/john-reiner" target="_blank">GitHub</NavDropdown.Item>
                 </NavDropdown>
                 </Nav>
                 <Nav>
-                <Nav.Link href="#deets">Contact</Nav.Link>
-                <Nav.Link eventKey={2} href="#memes" onClick={props.switchDarkmode}>
+                <Nav.Link>Contact</Nav.Link>
+                <Nav.Link onClick={props.switchDarkmode}>
                     Dark: {props.darkmode? 'On' : 'Off'}
                 </Nav.Link>
                 </Nav>

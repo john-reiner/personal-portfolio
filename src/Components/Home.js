@@ -1,25 +1,25 @@
 import React from 'react'
 
-import {Container, Row, Col, Jumbotron, Image, Card} from 'react-bootstrap'
+import {Container, Row, Col, Jumbotron, Image, Card, Button} from 'react-bootstrap'
 
 
 export default function Home(props) {
 
     return (
-        <div style={{paddingTop: "30px"}}>
+        <div style={{paddingTop: "30px", }}>
             <Container>
                 <Row>
                     <Col>
-                        <Jumbotron fluid >
+                        <Jumbotron fluid style={{backgroundColor: 'black'}} >
                             <Container>
                                 <Row>
-                                    <Col xs={6} sm={4} className="ml-auto">
+                                    {/* <Col xs={6} sm={4} className="ml-auto">
                                         <Image src="me.jpg" fluid rounded style={{height: "300px"}} />
-                                    </Col>                            
+                                    </Col>                             */}
                                     <Col xs={6} sm={8} >
-                                        <h1>while true: {'{Learn}'} </h1>
-                                        <h3>Never stop exploring</h3>
-                                        <p>Checkout some of my projects below </p>
+                                        <h1>Hi! I'm John</h1>
+                                        <h3>Full Stack Web Developer</h3>
+                                        <p>Checkout some of my projects below...</p>
                                     </Col>
                                 </Row>
                             </Container>
@@ -81,6 +81,7 @@ export default function Home(props) {
                                         </Card>
                                     </Col>
                                 </Row>
+                                <Button>View All My Projects</Button>
                             </Container>
                         </Jumbotron>
                     </Col>

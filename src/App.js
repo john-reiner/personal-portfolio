@@ -1,31 +1,22 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 //Components 
-import NavBar from './Components/NavBar';
 import Footer from './Components/Footer';
-import MainBody from './Components/MainBody';
+import Header from './Components/Header'
+import Portfolio from './Components/Portfolio'
+import Resume from './Components/Resume'
+import About from './Components/About'
+
 
 import './App.css';
 
 function App() {
 
-  const [data, setData] = useState({})
-  const [darkmode, setDarkMode] = useState(false)
-
-  const switchDarkmode = () => {
-    setDarkMode(!darkmode)
-    console.log(darkmode)
-  }
-
-  useEffect(() => {
-    fetch('/resumeData.json')
-    .then(response => response.json())
-    .then(data => setData(data))
-  }, [])
-
   return (
     <div className={'App'}>
-      <NavBar darkmode={darkmode} switchDarkmode={switchDarkmode}/>
-      <MainBody data={data} />
+      <Header />
+      <Portfolio />
+      <Resume />
+      <About />
       <Footer />
     </div>
   );
