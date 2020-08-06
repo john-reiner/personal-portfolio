@@ -20,8 +20,6 @@ export default function Resume() {
         })
     }, [])
 
-    console.log(resumeData)
-
     const renderEducaiton = () => {
         if (resumeData.education) {
             let key = 0 

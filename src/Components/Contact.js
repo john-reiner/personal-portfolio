@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 
 import {Modal, Form, Button} from 'react-bootstrap'
 
+import Axios from 'axios'
+
 export default function Contact(props) {
 
     const [name, setName] = useState('')
@@ -19,6 +21,23 @@ export default function Contact(props) {
         event.preventDefault()
         setDisabled(true)
         setEmailSent(false)
+
+        Axios.post('http://localhost:3002/send', {name, email, message})
+            .then(res => {
+                if (res.data.success) {
+                    setDisabled(false)
+                    setEmailSent(true)                    
+                } else {
+                    setDisabled(false)
+                    setEmailSent(false)                    
+                }
+
+            })
+            .catch(err => {
+                console.log(err, name, email, message)
+                setDisabled(false)
+                setEmailSent(false)   
+            })
     }
 
     return (
