@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import {Navbar, Nav, Button} from 'react-bootstrap'
+import {Navbar, Nav, Button, Container, Row, Col} from 'react-bootstrap'
 
 
 export default function Header(props) {
@@ -16,7 +16,7 @@ export default function Header(props) {
 
     return (
         
-        <div id="home" div style={{width: "100vw", height: "100vh", backgroundImage: `url(${resumeData.background_image})`, backgroundRepeat: "no-repeat", backgroundSize: "cover"}} >
+        <div id="home" div style={{width: "100%", height: "900px", backgroundImage: `url(${resumeData.background_image})`, backgroundSize: "cover"}} >
             <Navbar collapseOnSelect expand="md" bg="dark" variant="dark" fixed="top" >
                 <Navbar.Brand style={{fontFamily: 'Bangers', color: "cornflowerBlue"}} href="#home">My Portfolio</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -30,13 +30,26 @@ export default function Header(props) {
                 </Navbar.Collapse>
             </Navbar>
 
-            
 
-            <h1 id={"brand"}>{resumeData.name}</h1>
+            <Container >
+                <Row>
+                    <Col style={{marginTop: "15%"}}  md={{ span: 6, offset: 6 }}><h1 id={"brand"}>{resumeData.name}</h1></Col>
+                </Row>
+                <Row >
+                    <Col style={{marginTop: "10%"}} md={{ span: 6, offset: 3 }}>
+                    <div id={"sub-brand"}>
+                        <h4>{resumeData.occupation}</h4>
+                        <p>{resumeData.description}</p>                
+                    </div>
+                    </Col>
+                </Row>
+            </Container>
+
+            {/* 
             <div id={"sub-brand"}>
                 <h4>{resumeData.occupation}</h4>
                 <p>{resumeData.description}</p>                
-            </div>
+            </div> */}
 
 
 

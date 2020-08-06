@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import {Card, Col, Button, Container, Row, Image} from 'react-bootstrap'
+import {Card, Col, Button, Container, Row, Image, CardGroup} from 'react-bootstrap'
 
 export default function Portfolio() {
 
@@ -19,16 +19,17 @@ export default function Portfolio() {
                 return (
                     <Col>
                         <Card style={{borderRadius: '0'}}>
-                            <Card.Img variant="top" src={project.image} style={{width: "300px"}} />
+                            <Card.Img variant="top" src={project.image} />
                             <Card.Body>
                             <Card.Title>{project.name}</Card.Title>
                             <Card.Text>
                                 {project.description}
+                                <Button variant="link" >GitHub Repo</Button>
                             </Card.Text>
                             </Card.Body>
                             <Card.Footer>
-                                <Button style={{borderRadius: '0', marginRight: '5px'}}>Demo</Button>
-                                <Button style={{borderRadius: '0'}}>GitHub Repo</Button>
+                                <Button href={project.demo} target="_blank" style={{borderRadius: '0', marginRight: '5px'}}>Demo</Button>
+                                {/* <Button style={{borderRadius: '0'}}></Button> */}
                                 <Button style={{borderRadius: '0', float: "right"}}>More Info</Button>
                             </Card.Footer>
                         </Card>
@@ -37,6 +38,7 @@ export default function Portfolio() {
             })            
         }
     }
+    
     const renderWorking = () => {
         if (portfolioData.working) {
             return (
@@ -47,7 +49,7 @@ export default function Portfolio() {
                         <p>{portfolioData.working.topic_description}</p>                    
                     </Col>
                     <Col xs={6} md={4}>
-                        <Card style={{ width: '18rem', borderRadius: '0' }}>
+                        <Card style={{borderRadius: '0' }}>
                             <Card.Img variant="top" src={portfolioData.working.project_image} />
                             <Card.Body>
                                 <Card.Title>{portfolioData.working.topic}</Card.Title>
@@ -65,15 +67,14 @@ export default function Portfolio() {
         <div id="portfolio" style={{backgroundImage: `url(${portfolioData.background_image})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", padding: "5%"}}>
             <Container fluid style={{backgroundColor: "white", padding: "3%"}}>
             <h2>My Favorite Projects</h2>
-                <Row>
+                <CardGroup>
                     {renderProjectCards()}
-                </Row>
-                <Button size="lg" style={{borderRadius: '0'}} href="https://github.com/john-reiner" target="_blank" >View All My Projects</Button>
+                </CardGroup>
+                    <Button size="lg" style={{borderRadius: '0', marginTop: "20px"}} href="https://github.com/john-reiner" target="_blank" >View All My Projects</Button>
                 </Container>
                 <Container fluid style={{backgroundColor: "white", marginTop: "5%", padding: "3%"}}>
                     <Row>
-
-                    {renderWorking()}
+                        {renderWorking()}
                     </Row>
             </Container>
         </div>
