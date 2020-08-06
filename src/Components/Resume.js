@@ -66,11 +66,11 @@ export default function Resume() {
     }
 
     return (
-        <div id="resume" style={{backgroundImage: "url('portfolio_background.jpg')", backgroundRepeat: "no-repeat", backgroundSize: "cover", padding: "5%"}}>
+        <div id="resume" style={{backgroundImage: `url(${resumeData.background_image})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", padding: "5%"}}>
             <Container  fluid style={{backgroundColor: "white", padding: "3%"}}>
                 <Row>
                     <Col xs={6} md={4}>
-                        <Image src="resume.png" alt="John Reiner" style={{height: "200px", backgroundColor: "#333", borderRadius: "0"}} thumbnail />
+                        <Image src={resumeData.my_image} alt="John Reiner" style={{height: "200px", backgroundColor: "#333", borderRadius: "0"}} thumbnail />
                         <h2 style={{paddingTop: '2em'}} >John Reiner</h2>
                         <h4 style={{color: 'grey'}} >Full Stack Web Engineer</h4>
                         <hr style={{borderTop: "3px solid #333"}}/>

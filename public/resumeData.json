@@ -2,8 +2,8 @@
     "header": {
         "name": "John Reiner",
         "occupation": "Full Stack Web Developer",
-        "description": "Hi, I'm John",
-        "image": "profilepic.js"
+        "description": "Checkout some of my projects below...",
+        "background_image": "./photos/header_background.jpg"
     },
     "footer": {
         "test": "test"
@@ -12,9 +12,19 @@
         "test": "test"
     },
     "about": {
-        "test": "test"
+        "background_image": "./photos/portfolio_background.jpg",
+        "title" : "Full Stack Web Developer and technology enthusiast.",
+        "image": "./photos/me.jpg",
+        "text_paragraphs": [
+            "I started my career in banking. There I learned the necessary skills of teamwork, sales, customer service and leadership. I take a passion for leading by example and motivating my peers and team around me in and out of my network.",
+            "I found programming a few years ago, I wanted to know how computers actually work and network together. In that question I found a new passion. In the beginning of my journey I started by Learning the languages of Ruby and Python, following along with simple tutorials I learned the basics of programming. I decided to attend the Flatiron School after not knowing where to take my journey next. Flatiron taught me a lot, I developed a firm understanding of Full Stack Web Development. More importantly Flatiron taught me how to learn and grow in the technology industry. I gained the confidence I need to take on any challenge that I sent my mind to. Being humble while actively striving for the best is a practice that I will always continue to develop. I now believe that becoming a great developer involves being a Google wizard.",
+            "In my free time I enjoy playing the guitar, traveling, the company of my friends and family and new experiences. Currently I am sharpening my skills in the game of Chess.",
+            "Please feel free to network and reach out! Click on the 'Contact' button on the top right corner to start a conversation."
+        ]
     },
     "resume": {
+        "background_image": "./photos/portfolio_background.jpg",
+        "my_image": "./photos/resume.png",
         "education": [
             {
                 "name": "The Flatiron School",
@@ -97,6 +107,32 @@
         ]
     },
     "portfolio": {
-        "test": "test"
+        "background_image": "./photos/portfolio_background.jpg",
+        "projects": [
+            {
+                "name": "Wilson",
+                "image": "./photos/wilson.png",
+                "description": "This is Wilson"
+            },
+            {
+                "name": "Tetris in React",
+                "image": "./photos/tetris.png",
+                "description": "This is Tetris in React"
+            },
+            {
+                "name": "Apple Calculator Clone",
+                "image": "./photos/calc.png",
+                "description": "this is a clone of the Apple Calculator"
+            }
+        ],
+        "working": {
+            "topic": "Node.js",
+            "name": "Weather App",
+            "topic_image": "./icons/nodejs/nodejs-original-wordmark.svg",
+            "topic_description": "Right now I'm sharpenign my Node.js skills by taking a Udemy course (The Complete Node.js Developer Course (3rd Edition)). Checkout what I'm working on to the right =>",
+            "project_image": "./photos/working.png",
+            "project_description": "Its a weather app",
+            "github": "https://github.com/john-reiner/node-course"
+        }
     }
 }

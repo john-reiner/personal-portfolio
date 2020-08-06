@@ -1,78 +1,79 @@
-import React from 'react'
-import {Card, Col, Button, Container, Row} from 'react-bootstrap'
+import React, {useState, useEffect} from 'react'
+import {Card, Col, Button, Container, Row, Image} from 'react-bootstrap'
 
 export default function Portfolio() {
+
+    const [portfolioData, setPortfolioData] = useState({})
+
+    useEffect(() => {
+        fetch('/resumeData.json')
+        .then(response => response.json())
+        .then(data => {
+            setPortfolioData(data.portfolio)
+        })
+    }, [])
+
+    const renderProjectCards = () => {
+        if (portfolioData.projects) {
+            return portfolioData.projects.map(project => {
+                return (
+                    <Col>
+                        <Card style={{borderRadius: '0'}}>
+                            <Card.Img variant="top" src={project.image} style={{width: "300px"}} />
+                            <Card.Body>
+                            <Card.Title>{project.name}</Card.Title>
+                            <Card.Text>
+                                {project.description}
+                            </Card.Text>
+                            </Card.Body>
+                            <Card.Footer>
+                                <Button style={{borderRadius: '0', marginRight: '5px'}}>Demo</Button>
+                                <Button style={{borderRadius: '0'}}>GitHub Repo</Button>
+                                <Button style={{borderRadius: '0', float: "right"}}>More Info</Button>
+                            </Card.Footer>
+                        </Card>
+                    </Col>
+                )
+            })            
+        }
+    }
+    const renderWorking = () => {
+        if (portfolioData.working) {
+            return (
+                <Row>
+                    <Col xs={12} md={8}>
+                        <h2>Currently Working on...</h2>
+                        <Image style={{height: "200px"}} src={portfolioData.working.topic_image} fluid />
+                        <p>{portfolioData.working.topic_description}</p>                    
+                    </Col>
+                    <Col xs={6} md={4}>
+                        <Card style={{ width: '18rem', borderRadius: '0' }}>
+                            <Card.Img variant="top" src={portfolioData.working.project_image} />
+                            <Card.Body>
+                                <Card.Title>{portfolioData.working.topic}</Card.Title>
+                                <Card.Text>{portfolioData.working.project_description}</Card.Text>
+                                <Button style={{borderRadius: '0'}} href={portfolioData.working.github} target="_blank" variant="primary">Link to Github Repo</Button>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
+            )
+        }       
+    }
+
     return (
-        <div id="portfolio" style={{backgroundImage: "url('portfolio_background.jpg')", backgroundRepeat: "no-repeat", backgroundSize: "cover", padding: "5%"}}>
+        <div id="portfolio" style={{backgroundImage: `url(${portfolioData.background_image})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", padding: "5%"}}>
             <Container fluid style={{backgroundColor: "white", padding: "3%"}}>
             <h2>My Favorite Projects</h2>
                 <Row>
-                    <Col>
-                        <Card style={{borderRadius: '0'}}>
-                            <Card.Img variant="top" src="background.jpg" />
-                            <Card.Body>
-                            <Card.Title>Card title</Card.Title>
-                            <Card.Text>
-                                This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.
-                            </Card.Text>
-                            </Card.Body>
-                            <Card.Footer>
-                            <small className="text-muted">Last updated 3 mins ago</small>
-                            </Card.Footer>
-                        </Card>
-                    </Col>
-                    <Col>
-                        <Card style={{borderRadius: '0'}}>
-                            <Card.Img variant="top" src="background.jpg" />
-                            <Card.Body>
-                            <Card.Title>Card title</Card.Title>
-                            <Card.Text>
-                                This card has supporting text below as a natural lead-in to additional
-                                content.{' '}
-                            </Card.Text>
-                            </Card.Body>
-                            <Card.Footer>
-                            <small className="text-muted">Last updated 3 mins ago</small>
-                            </Card.Footer>
-                        </Card>
-                    </Col>
-                    <Col>
-                        <Card style={{borderRadius: '0'}}>
-                            <Card.Img variant="top" src="background.jpg" />
-                            <Card.Body>
-                            <Card.Title>Card title</Card.Title>
-                            <Card.Text>
-                                This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This card has even longer content than the first to
-                                show that equal height action.
-                            </Card.Text>
-                            </Card.Body>
-                            <Card.Footer>
-                            <small className="text-muted">Last updated 3 mins ago</small>
-                            </Card.Footer>
-                        </Card>
-                    </Col>
+                    {renderProjectCards()}
                 </Row>
                 <Button size="lg" style={{borderRadius: '0'}} href="https://github.com/john-reiner" target="_blank" >View All My Projects</Button>
                 </Container>
                 <Container fluid style={{backgroundColor: "white", marginTop: "5%", padding: "3%"}}>
                     <Row>
-                        <Col>
-                            <h2>Currently Working on...</h2>
-                            <p>Right now I'm sharpenign my Node.js skills by taking this Udemy course. Below is the project im working on this week</p>
-                            <Card className="text-center" style={{borderRadius: '0'}}>
-                                <Card.Header>Example Working Project</Card.Header>
-                                <Card.Body>
-                                    <Card.Title>Project Name</Card.Title>
-                                    <Card.Text>
-                                    Description of Project 
-                                    </Card.Text>
-                                    <Button style={{borderRadius: '0'}}  variant="primary">Link to Github Repo</Button>
-                                </Card.Body>
-                                <Card.Footer className="text-muted">2 days ago</Card.Footer>
-                            </Card>
-                        </Col>
+
+                    {renderWorking()}
                     </Row>
             </Container>
         </div>
