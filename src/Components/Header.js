@@ -5,7 +5,7 @@ import {Navbar, Nav, Button} from 'react-bootstrap'
 export default function Header(props) {
     return (
         
-        <div div style={{width: "100vw", height: "100vh", backgroundImage: "url('header_background.jpg')", backgroundRepeat: "no-repeat", backgroundSize: "cover"}} >
+        <div id="home" div style={{width: "100vw", height: "100vh", backgroundImage: "url('header_background.jpg')", backgroundRepeat: "no-repeat", backgroundSize: "cover"}} >
             <Navbar collapseOnSelect expand="md" bg="dark" variant="dark" fixed="top" >
                 <Navbar.Brand style={{fontFamily: 'Bangers', color: "cornflowerBlue"}} href="#home">My Portfolio</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />

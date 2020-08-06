@@ -3,7 +3,7 @@ import {Card, Col, Button, Container, Row} from 'react-bootstrap'
 
 export default function Portfolio() {
     return (
-        <div style={{backgroundImage: "url('portfolio_background.jpg')", backgroundRepeat: "no-repeat", backgroundSize: "cover", padding: "5%"}}>
+        <div id="portfolio" style={{backgroundImage: "url('portfolio_background.jpg')", backgroundRepeat: "no-repeat", backgroundSize: "cover", padding: "5%"}}>
             <Container fluid style={{backgroundColor: "white", padding: "3%"}}>
             <h2>My Favorite Projects</h2>
                 <Row>
@@ -54,7 +54,7 @@ export default function Portfolio() {
                         </Card>
                     </Col>
                 </Row>
-                <Button style={{borderRadius: '0'}} >View All My Projects</Button>
+                <Button size="lg" style={{borderRadius: '0'}} href="https://github.com/john-reiner" target="_blank" >View All My Projects</Button>
                 </Container>
                 <Container fluid style={{backgroundColor: "white", marginTop: "5%", padding: "3%"}}>
                     <Row>

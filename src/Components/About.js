@@ -3,7 +3,7 @@ import {Container, Row, Col, Image} from 'react-bootstrap'
 
 export default function About() {
     return (
-        <div style={{backgroundImage: "url('portfolio_background.jpg')", backgroundRepeat: "no-repeat", backgroundSize: "cover", padding: "5%"}}>
+        <div id="about" style={{backgroundImage: "url('portfolio_background.jpg')", backgroundRepeat: "no-repeat", backgroundSize: "cover", padding: "5%"}}>
             <Container fluid style={{backgroundColor: "#333", color: "white", padding: "3%"}}>
                 <h2>About Me</h2>
                 <hr style={{borderTop: "3px solid white"}}/>            

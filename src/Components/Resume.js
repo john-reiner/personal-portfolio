@@ -1,8 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {Container, Row, Col, Image} from 'react-bootstrap'
 
-
-
 import Education from './Education'
 import Experience from './Experience'
 import Skill from './Skill'
@@ -68,8 +66,8 @@ export default function Resume() {
     }
 
     return (
-        <div style={{backgroundImage: "url('portfolio_background.jpg')", backgroundRepeat: "no-repeat", backgroundSize: "cover", padding: "5%"}}>
-            <Container fluid style={{backgroundColor: "white", padding: "3%"}}>
+        <div id="resume" style={{backgroundImage: "url('portfolio_background.jpg')", backgroundRepeat: "no-repeat", backgroundSize: "cover", padding: "5%"}}>
+            <Container  fluid style={{backgroundColor: "white", padding: "3%"}}>
                 <Row>
                     <Col xs={6} md={4}>
                         <Image src="resume.png" alt="John Reiner" style={{height: "200px", backgroundColor: "#333", borderRadius: "0"}} thumbnail />
@@ -89,7 +87,7 @@ export default function Resume() {
                         <p><a href="https://github.com/jareiner90" target="_blank" rel="noopener noreferrer"> john-reiner </a></p>
                         <hr style={{borderTop: "3px solid #333"}}/>
                     </Col>
-                    <Col xs={12} md={8} style={{backgroundColor: "#333", color: "white"}}>
+                    <Col xs={12} md={8} style={{backgroundColor: "#333", color: "white", paddingTop: "3%", paddingBottom: "3%"}}>
                         <h2>Education</h2>
                         {renderEducaiton()}
                         <h2>Experience</h2>
