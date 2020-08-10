@@ -24,7 +24,7 @@ export default function Portfolio() {
                             <Card.Title>{project.name}</Card.Title>
                             <Card.Text>
                                 {project.description}
-                                <Button variant="link" >GitHub Repo</Button>
+                                <Button href={project.github} target="_blank" variant="link" >GitHub Repo</Button>
                             </Card.Text>
                             </Card.Body>
                             <Card.Footer>

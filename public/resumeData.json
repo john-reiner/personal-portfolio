@@ -113,7 +113,7 @@
                 "name": "Wilson",
                 "image": "./photos/wilson.png",
                 "description": "Wilson is a goal tracker application. A user can sign in, create a goal and add tasks to complete the goal. Wilson knows when a goal is complete when all the tasks for that particular goal are complete. A user can also upload resources assigned to a goal, to help in goal progression.",
-                "github": "wilson-development"
+                "github": "https://github.com/john-reiner/wilson-development"
             },
             {
                 "name": "Tetris in React",

@@ -1,5 +1,6 @@
 {
   "name": "personal-portfolio-react",
+  "homepage": "http://www.johnreiner.me",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

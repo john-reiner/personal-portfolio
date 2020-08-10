@@ -17,7 +17,6 @@ export default function About() {
     const renderParagraphs = () => {
         if (aboutmeData.text_paragraphs) {
             return aboutmeData.text_paragraphs.map(paragraph => {
-                console.log(paragraph)
                 return (
                     <p>{paragraph}</p>
                 )

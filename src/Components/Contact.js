@@ -22,7 +22,9 @@ export default function Contact(props) {
         setDisabled(true)
         setEmailSent(false)
 
-        Axios.post('http://localhost:3002/send', {name, email, message})
+        // https://contactmeportfolio.herokuapp.com/send
+
+        Axios.post('https://contactmeportfolio.herokuapp.com/send', {name, email, message})
             .then(res => {
                 if (res.data.success) {
                     setDisabled(false)
@@ -31,10 +33,10 @@ export default function Contact(props) {
                     setDisabled(false)
                     setEmailSent(false)                    
                 }
-
             })
+
             .catch(err => {
-                console.log(err, name, email, message)
+                console.log('ERROR IS: ', err)
                 setDisabled(false)
                 setEmailSent(false)   
             })
