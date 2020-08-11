@@ -16,7 +16,7 @@ export default function Header(props) {
 
     return (
         
-        <div id="home" div className="img-responsive center-block" style={{width: "100%", height: "900px", backgroundImage: `url(${resumeData.background_image})`, backgroundSize: "cover"}} >
+        <div id="home"  style={{width: "100%", height: "900px", backgroundImage: `url(${resumeData.background_image})`, backgroundSize: "cover", backgroundPosition: "right"}} >
             <Navbar collapseOnSelect expand="md" bg="dark" variant="dark" fixed="top" >
                 <Navbar.Brand style={{fontFamily: 'Bangers', color: "cornflowerBlue"}} href="#home">My Portfolio</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -44,15 +44,6 @@ export default function Header(props) {
                     </Col>
                 </Row>
             </Container>
-
-            {/* 
-            <div id={"sub-brand"}>
-                <h4>{resumeData.occupation}</h4>
-                <p>{resumeData.description}</p>                
-            </div> */}
-
-
-
         </div>
     )
 }
