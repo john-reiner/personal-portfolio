@@ -32,7 +32,8 @@ export default function Contact(props) {
                 if (res.data.success) {
                     setEmailSending(false)
                     setDisabled(false)
-                    setEmailSent(true)                    
+                    setEmailSent(true)
+                    clearForm()                    
                 } else {
                     setEmailSending(false)
                     setDisabled(false)
@@ -46,6 +47,12 @@ export default function Contact(props) {
                 setEmailFail(true)   
             })
             setEmailSending(true)
+    }
+
+    const clearForm = () => {
+        setName('')
+        setEmail('')
+        setMessage('')
     }
 
     return (
