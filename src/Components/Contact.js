@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import {Modal, Form, Button} from 'react-bootstrap'
+import {Modal, Form, Button, Spinner} from 'react-bootstrap'
 
 import Axios from 'axios'
 
@@ -10,7 +10,9 @@ export default function Contact(props) {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
     const [disabled, setDisabled] = useState(false)
-    const [emailSent, setEmailSent] = useState(null)
+    const [emailSent, setEmailSent] = useState(false)
+    const [emailFail, setEmailFail] = useState(false)
+    const [emailSending, setEmailSending] = useState(false)
 
     const handleNameChange = (event) => setName(event.target.value)
     const handleEmailChange = (event) => setEmail(event.target.value)
@@ -25,21 +27,25 @@ export default function Contact(props) {
         // https://contactmeportfolio.herokuapp.com/send
 
         Axios.post('https://contactmeportfolio.herokuapp.com/send', {name, email, message})
+            
             .then(res => {
                 if (res.data.success) {
+                    setEmailSending(false)
                     setDisabled(false)
                     setEmailSent(true)                    
                 } else {
+                    setEmailSending(false)
                     setDisabled(false)
-                    setEmailSent(false)                    
+                    // setEmailFail(true)                    
                 }
             })
-
             .catch(err => {
-                console.log('ERROR IS: ', err)
+                console.log('ERROR: ', err)
+                setEmailSending(false)
                 setDisabled(false)
-                setEmailSent(false)   
+                setEmailFail(true)   
             })
+            setEmailSending(true)
     }
 
     return (
@@ -78,7 +84,8 @@ export default function Contact(props) {
                     </Button>
 
                     {emailSent === true && <p className="d-inline success-msg">Email Sent</p>}
-                    {emailSent === false && <p className="d-inline error-msg">Email Not Sent</p>}
+                    {emailFail === true && <p className="d-inline error-msg">Email Not Sent</p>}
+                    {emailSending === true && <div className="d-flex justify-content-center"><Spinner  animation="border" variant="primary" role="status"> <span className="sr-only">Loading</span> </Spinner></div> }
                 </Form>
 
             </Modal.Body>
