@@ -30,7 +30,7 @@ export default function Portfolio() {
                             <Card.Footer>
                                 <Button href={project.demo} target="_blank" style={{borderRadius: '0', marginRight: '5px'}}>Demo</Button>
                                 {/* <Button style={{borderRadius: '0'}}></Button> */}
-                                <Button style={{borderRadius: '0', float: "right"}}>More Info</Button>
+                                <Button href={project.info} target="_blank" style={{borderRadius: '0', float: "right"}}>More Info</Button>
                             </Card.Footer>
                         </Card>
                     </Col>

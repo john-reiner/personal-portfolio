@@ -65,7 +65,7 @@ export default function Contact(props) {
         >
             <Modal.Header  closeButton >
             <Modal.Title  id="example-modal-sizes-title-lg">
-                Let's Talk
+                Send me an email!
             </Modal.Title>
             </Modal.Header>
             <Modal.Body >
@@ -77,7 +77,7 @@ export default function Contact(props) {
                     </Form.Group>
 
                     <Form.Group>
-                        <Form.Label htmlFor="email">Email</Form.Label>
+                        <Form.Label htmlFor="email">Your Email</Form.Label>
                         <Form.Control id="email" name="email" type="email" value={email} onChange={handleEmailChange}></Form.Control>
                     </Form.Group>
 

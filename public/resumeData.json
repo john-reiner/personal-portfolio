@@ -112,21 +112,25 @@
             {
                 "name": "Wilson",
                 "image": "./photos/wilson.png",
-                "description": "Wilson is a goal tracker application. A user can sign in, create a goal and add tasks to complete the goal. Wilson knows when a goal is complete when all the tasks for that particular goal are complete. A user can also upload resources assigned to a goal, to help in goal progression.",
-                "github": "https://github.com/john-reiner/wilson-development"
+                "description": "Wilson is an application built to help users keep track of their goals. A user can sign in, create a goal and add tasks to that goal. Wilson will know when the goal is complete when all the tasks are marked complete! Users assign a goal a due date and can keep track of their goals in the calendar component. Users can also see when they completed previous goals as Wilson will keep a record of completed goals.",
+                "github": "https://github.com/john-reiner/wilson-development",
+                "info": "https://github.com/john-reiner/wilson-development",
+                "demo": "https://john-reiner.github.io/wilson"
             },
             {
                 "name": "Tetris in React",
                 "image": "./photos/tetris.png",
-                "description": "I built this tetris clone by following along with a tutorial, (https://www.youtube.com/watch?v=ZGOaCxX8HIU). I learned how React Hooks are used as a state management system. The tutorial helped me create the tetris game (all in React) while I constructed the Back-End and user sign in and score tracker. ",
-                "github": "https://github.com/john-reiner/tetris-in-react"
+                "description": "I built this tetris clone by following along with a tutorial, (). I learned how React Hooks are used as a state management system. The tutorial helped me create the tetris game (all in React) while I constructed the Back-End and user sign in and score tracker. ",
+                "github": "https://github.com/john-reiner/tetris-in-react",
+                "info" : "https://www.youtube.com/watch?v=ZGOaCxX8HIU",
+                "demo" : "https://john-reiner.github.io/deploy_react_tetris/"
             },
             {
                 "name": "Apple Calculator Clone",
                 "image": "./photos/calc.png",
-                "description": "One day when the power was out (no internet) I challenged myself to create a basic calculator. I used the Apple calculator as an example to follow along with. What I'm most proud of is that I tried this challenge a year ago and struggled to render the buttons. ",
+                "description": "One day when the power was out (no internet) I challenged myself to create a basic calculator. I used the Apple calculator as an example to follow along with. What I'm most proud of is that I tried this challenge a year ago and struggled just to render the buttons. ",
                 "github": "https://github.com/john-reiner/javascript_calculator",
-                "demo": "../src/jscalc/calc.html"
+                "demo": "http://www.johnreiner.me/calc/"
             }
         ],
         "working": {

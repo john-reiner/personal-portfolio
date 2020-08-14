@@ -36,7 +36,7 @@ export default function Header(props) {
                     <Col style={{marginTop: "15%"}}  md={{ span: 6, offset: 6 }}><h1 id={"brand"}>{resumeData.name}</h1></Col>
                 </Row>
                 <Row >
-                    <Col style={{marginTop: "10%"}} md={{ span: 6, offset: 3 }}>
+                    <Col style={{marginTop: "5%"}} md={{ span: 6, offset: 6 }}>
                     <div id={"sub-brand"}>
                         <h4>{resumeData.occupation}</h4>
                         <p>{resumeData.description}</p>                
