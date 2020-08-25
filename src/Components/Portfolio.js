@@ -66,11 +66,11 @@ export default function Portfolio() {
     return (
         <div id="portfolio" style={{backgroundImage: `url(${portfolioData.background_image})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", padding: "5%"}}>
             <Container fluid style={{backgroundColor: "white", padding: "3%"}}>
-            <h2>My Favorite Projects</h2>
+            <h2>My Projects</h2>
                 <CardGroup>
                     {renderProjectCards()}
                 </CardGroup>
-                    <Button size="lg" style={{borderRadius: '0', marginTop: "20px"}} href="https://github.com/john-reiner" target="_blank" >View All My Projects</Button>
+                    <Button size="lg" style={{borderRadius: '0', marginTop: "20px"}} href="https://github.com/john-reiner" target="_blank" >My GitHub</Button>
                 </Container>
                 <Container fluid style={{backgroundColor: "white", marginTop: "5%", padding: "3%"}}>
                     <Row>
