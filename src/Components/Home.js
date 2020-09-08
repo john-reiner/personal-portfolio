@@ -13,9 +13,6 @@ export default function Home(props) {
                         <Jumbotron fluid style={{backgroundColor: 'black'}} >
                             <Container>
                                 <Row>
-                                    {/* <Col xs={6} sm={4} className="ml-auto">
-                                        <Image src="me.jpg" fluid rounded style={{height: "300px"}} />
-                                    </Col>                             */}
                                     <Col xs={6} sm={8} >
                                         <h1>Hi! I'm John</h1>
                                         <h3>Full Stack Web Developer</h3>
