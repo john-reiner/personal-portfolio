@@ -175,7 +175,7 @@
             "topic": "Node.js",
             "name": "Weather App",
             "topic_image": "./icons/nodejs/nodejs-original-wordmark.svg",
-            "topic_description": "I'm sharpening my Node.js skills by taking a Udemy course (The Complete Node.js Developer Course (3rd Edition)). Right now, I am practicing my Mongodb, Express and Mongoose efficiency while going over (and complementing with) Promises and Async Await in Node.js... Checkout my Github repo to see what I’m working on! =>",
+            "topic_description": "I'm sharpening my Node.js skills by taking a Udemy course (The Complete Node.js Developer Course (3rd Edition)). Right now, I am practicing my Mongodb, Express and Mongoose efficiency while going over (and complementing with) Promises and Async Await in Node.js... Checkout my Github repo to see what I’m working on!  =>",
             "project_image": "./photos/working.png",
             "project_description": "",
             "github": "https://github.com/john-reiner/node-course"
