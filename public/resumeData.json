@@ -57,15 +57,19 @@
         ],
         "skills": [
             {
-                "name": "React",
+                "name": "HTML 5",
                 "type": "language"
             },
             {
-                "name": "JavaScript",
+                "name": "CSS 3",
                 "type": "language"
             },
             {
-                "name": "Node.js",
+                "name": "Bootstrap",
+                "type": "language"
+            },
+            {
+                "name": "Javascript",
                 "type": "language"
             },
             {
@@ -73,11 +77,39 @@
                 "type": "language"
             },
             {
-                "name": "Python",
+                "name": "React",
+                "type": "language"
+            },
+            {
+                "name": "NPM",
+                "type": "language"
+            },
+            {
+                "name": "Node.js",
+                "type": "language"
+            },
+            {
+                "name": "Mongodb",
+                "type": "language"
+            },
+            {
+                "name": "Express",
+                "type": "language"
+            },
+            {
+                "name": "Ruby",
+                "type": "language"
+            },
+            {
+                "name": "Rails",
                 "type": "language"
             },
             {
                 "name": "PostgreSQL",
+                "type": "language"
+            },
+            {
+                "name": "Python",
                 "type": "language"
             },
             {
@@ -89,21 +121,26 @@
                 "type": "technology"
             },
             {
-                "name": "Chrome",
-                "type": "technology"
-            },
-            {
                 "name": "Visual Studio",
                 "type": "technology"
             },
             {
-                "name": "Rails",
-                "type": "language"
+                "name": "Chrome",
+                "type": "technology"
             },
             {
-                "name": "Ruby",
-                "type": "language"
+                "name": "Heroku",
+                "type": "technology"
+            },
+            {
+                "name": "Apple",
+                "type": "technology"
+            },
+            {
+                "name": "Windows",
+                "type": "technology"
             }
+            
         ]
     },
     "portfolio": {
@@ -138,7 +175,7 @@
             "topic": "Node.js",
             "name": "Weather App",
             "topic_image": "./icons/nodejs/nodejs-original-wordmark.svg",
-            "topic_description": "Right now I'm sharpenign my Node.js skills by taking a Udemy course (The Complete Node.js Developer Course (3rd Edition)). Checkout what I'm working on to the right =>",
+            "topic_description": "I'm sharpening my Node.js skills by taking a Udemy course (The Complete Node.js Developer Course (3rd Edition)). Right now, I am practicing my Mongodb, Express and Mongoose efficiency while going over (and complementing with) Promises and Async Await in Node.js... Checkout my Github repo to see what I’m working on! =>",
             "project_image": "./photos/working.png",
             "project_description": "",
             "github": "https://github.com/john-reiner/node-course"
