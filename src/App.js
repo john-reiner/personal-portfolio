@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-//Components 
 import Footer from './Components/Footer';
 import Header from './Components/Header'
 import Portfolio from './Components/Portfolio'
