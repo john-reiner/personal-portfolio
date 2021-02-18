@@ -38,30 +38,6 @@ export default function Portfolio() {
             })            
         }
     }
-    
-    const renderWorking = () => {
-        if (portfolioData.working) {
-            return (
-                <Row>
-                    <Col xs={12} md={8}>
-                        <h2>Currently Working on...</h2>
-                        <Image style={{height: "200px"}} src={portfolioData.working.topic_image} fluid />
-                        <p>{portfolioData.working.topic_description}</p>                    
-                    </Col>
-                    <Col xs={6} md={4}>
-                        <Card style={{borderRadius: '0' }}>
-                            <Card.Img variant="top" src={portfolioData.working.project_image} />
-                            <Card.Body>
-                                <Card.Title>{portfolioData.working.topic}</Card.Title>
-                                <Card.Text>{portfolioData.working.project_description}</Card.Text>
-                                <Button style={{borderRadius: '0'}} href={portfolioData.working.github} target="_blank" variant="primary">Link to Github Repo</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                </Row>
-            )
-        }       
-    }
 
     return (
         <div id="portfolio" style={{backgroundImage: `url(${portfolioData.background_image})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", padding: "5%"}}>
@@ -72,11 +48,6 @@ export default function Portfolio() {
                 </CardGroup>
                     <Button size="lg" style={{borderRadius: '0', marginTop: "20px"}} href="https://github.com/john-reiner" target="_blank" >My GitHub</Button>
                 </Container>
-                <Container fluid style={{backgroundColor: "white", marginTop: "5%", padding: "3%"}}>
-                    <Row>
-                        {renderWorking()}
-                    </Row>
-            </Container>
         </div>
     )
 }

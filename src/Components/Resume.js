@@ -70,7 +70,7 @@ export default function Resume() {
             <Container  fluid style={{backgroundColor: "white", padding: "3%"}}>
                 <Row>
                     <Col xs={6} md={4}>
-                        <Image src={resumeData.my_image} fluid alt="John Reiner" style={{height: "200px", backgroundColor: "#333", borderRadius: "0"}} thumbnail />
+                        <Image src={resumeData.my_image} fluid alt="John Reiner" style={{height: "200px", backgroundColor: "#333", borderRadius: "0", margin: 'auto 0'}} thumbnail />
                         <h2 style={{paddingTop: '2em'}} >John Reiner</h2>
                         <h4 style={{color: 'grey'}} >Full Stack Web Engineer</h4>
                         <hr style={{borderTop: "3px solid #333"}}/>
