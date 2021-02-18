@@ -74,7 +74,7 @@ export default function Resume() {
                         <h2 style={{paddingTop: '2em'}} >John Reiner</h2>
                         <h4 style={{color: 'grey'}} >Full Stack Web Engineer</h4>
                         <hr style={{borderTop: "3px solid #333"}}/>
-                        <p>Front End Engineer with working knowledge of Full Stack Web Development. Powerful front end  programming skills and proficiency in React, Javascript, HTML, and CSS. A strong understanding of ES6 and modern CSS features including Flexbox and Bootstrap. 
+                        <p>Software Developer with working knowledge of Full Stack Web Development. Powerful programming skills and proficiency in React, Javascript, Ruby on Rails, and HTML & CSS. A strong understanding of ES6 and modern CSS features including Flexbox and Bootstrap. 
                         <br></br>
                         <br></br>
                         5 years experience working in the banking and financial industry with a focus on Sales and Customer Service. Strong track record of leading teams and representing departments on cross functional teams. Excellent at resolving complex problems and strong communication skills. </p>

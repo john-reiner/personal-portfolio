@@ -24,7 +24,7 @@
     },
     "resume": {
         "background_image": "./photos/portfolio_background.jpg",
-        "my_image": "./photos/resume.png",
+        "my_image": "./photos/resume.jpg",
         "education": [
             {
                 "name": "The Flatiron School",
@@ -149,10 +149,10 @@
             {
                 "name": "Wilson",
                 "image": "./photos/wilson.png",
-                "description": "Wilson is an application built to help users keep track of their goals. A user can sign in, create a goal and add tasks to that goal. Wilson will know when the goal is complete when all the tasks are marked complete! Users assign a goal a due date and can keep track of their goals in the calendar component. Users can also see when they completed previous goals as Wilson will keep a record of completed goals.",
+                "description": "Wilson is a goal tracking application. A user can create goals and assign tasks to each goal. Wilson is designed to keep track of the tasks associated with each goal to help keep users motivated. Wilson was built with a React JS Front-end and a Rails API on the Back-end. Wilson uses JSON Web Tokens to keep track of user authentication and their sessions. Wilson uses a number of NPM packages along with many Ruby Gems on the Rails side.",
                 "github": "https://github.com/john-reiner/wilson/tree/master",
                 "info": "https://github.com/john-reiner/wilson/blob/master/README.md",
-                "demo": "https://john-reiner.github.io/wilson"
+                "demo": "https://john-reiner.github.io/wilson-2.0"
             },
             {
                 "name": "Tetris in React",
